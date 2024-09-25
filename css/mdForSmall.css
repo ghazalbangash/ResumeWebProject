@@ -1,0 +1,97 @@
+/* Media Query For samall */
+@media only screen and (min-width: 760px) {
+  h1.section-title {
+    font-size: 6rem;
+  }
+  .btn {
+    padding: 21px 50px;
+    font-size: 2.4rem;
+  }
+
+  /* Home */
+  #home h1 {
+    font-size: 7rem;
+  }
+  /* End Home */
+
+  /* Project */
+  #projects .projectItem {
+    height: 750px;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  #projects .projectItem {
+    flex-direction: row;
+  }
+  #projects .allProjects .projectImg {
+    height: 100%;
+  }
+  #projects .allProjects .projectInfo {
+    height: 100%;
+  }
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  /* End Project */
+
+  /* About */
+  #about .about {
+    flex-direction: row;
+  }
+  #about .colLeft {
+    width: 610px;
+    padding-left: 64px;
+    height: 410px;
+  }
+  #about .about .colLeft .aboutImg::after {
+    left: -40px;
+    top: 34px;
+    height: 95%;
+    width: 95%;
+    border: 11px solid crimson;
+  }
+  #about .colRight h1 {
+    text-align: left;
+  }
+  #about .colRight {
+    text-align: left;
+    padding: 30px;
+  }
+  /* End About */
+
+  /* contact  */
+  #contact .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    min-width: 22vh;
+    justify-content: center;
+  }
+  #contact .contactItem {
+    width: 90%;
+    flex-direction: row;
+    margin: 0;
+  }
+  #contact .contactItem .contactInfo {
+    text-align: left;
+    width: 100%;
+    padding-left: 20px;
+  }
+  #contact .contactItem .icon {
+    width: 100px;
+    height: 100px;
+  }
+  #contact .contactItems {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #contact .contactItem .icon img {
+    object-fit: contain;
+  }
+  /* End contact  */
+}
+/* End Media Query For small */
